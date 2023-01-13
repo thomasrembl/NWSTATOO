@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+}
+
+.fond {
+    object-fit: cover;
+    width: 100%; 
+    height: 100%; 
+
+}
+.taille {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-image:url(image/fond.png) ;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    color: azure;
+    font-family: bradley-djr,sans-serif;
+    font-weight: 800px;
+    font-style: normal;
+}
+
+header {
+    background-color: rgb(124, 10, 10);
+    padding: 0px 50px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+    font-size: 30px;
+}
+
+nav a {
+    margin-left: 30px;
+}  
+
+.texte {
+    text-align: justify;
+    font-size: 30px;
+    margin-top: 100px;
+
+}
+
+.texte2 {
+    text-align: justify;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.image {
+    height: 500px;
+}
+
+.image2 {
+    height: 400px;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.one1 h2 {
+
+    font-size: 80px;
+    text-align: center;
+}
+
+.texte3 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 150px;
+}
+
+.one1 {
+    grid-column: 1/3;
+    grid-row: 1;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    margin: auto;
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.two
+.three,
+.four {
+    margin: auto;
+}
+
+
+
+    .two1
+    .three1,
+    .four1,
+    .five1,
+    .six1,
+    .seven1{
+        margin: auto;
+    }
+
+@media (max-width: 1000px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        grid-auto-rows: minmax(100px, auto);
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 150px;
+    }
+    .two {
+        grid-column: 1;
+        grid-row: 1;
+        margin: auto;
+    }
+    .one1{
+        grid-column:1 ;
+        grid-row: 1;
+        margin: auto;
+    }
+    .two1{
+        grid-column: 1;
+        grid-row: 2;
+        margin: auto;
+    }
+    .three1,
+    .four1,
+    .five1,
+    .six1,
+    .seven1{
+        margin: auto;
+    }
+}
